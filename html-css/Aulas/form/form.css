@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+
+body{
+    padding: 2%;
+    background-color: rgb(0, 0, 0);
+}
+
+fieldset{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+
+}
+legend{
+    color: white;
+}
+
+input, select{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solida black;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    height: 30px;
+    resize: none;
+    margin-bottom: 10px;
+    border: 1px solida black;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: 0.6s;
+}
+
+textarea:focus{
+    background-color: rgb(173, 195, 230);
+    height: 120px;
+}
+
+input:focus{
+    background-color: rgb(173, 195, 230);
+}
+
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: auto;
+    height: 50px;
+}
+
+label{
+    color: white;
+    font-weight: bold;
+}

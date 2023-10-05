@@ -13,30 +13,56 @@
 </head>
 <body>
     <div class="container card mt-3 p-3">
-        <form action="">
-            <div class="mb3">
-                <label class="form-label" for="Nome">Nome</label>
-                <input type="text" class="form-control" placeholder="Digite o nome do usuário">
-            </div>
-            <div class="mb-3">
-                <label for="" class="form-label">Senha</label>
-                <input type="password" class="form-control" name="" id="" placeholder="Digite sua senha">
-                <small class="text-muted">Sua senha deve conter 8 - 20 caracteres</small>
-            </div>            
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" value="" id="FullStack">
-              <label class="form-check-label" for="FullStack">
-                Desenvolvedor FullStack
-              </label>
-            </div>
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" value="" id="python" checked>
-              <label class="form-check-label" for="python">
-                Programação Python
-              </label>
-            </div>
-            <button type="button" class="btn btn-success">Enviar</button>
-        </form>
+      <form action="">
+        <div class="mb3">
+            <label class="form-label" for="Nome">Nome</label>
+            <input type="text" class="form-control" placeholder="Digite o nome do usuário">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Senha</label>
+            <input type="password" class="form-control" name="" id="" placeholder="Digite sua senha">
+            <small class="text-muted">Sua senha deve conter 8 - 20 caracteres</small>
+        </div>            
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="FullStack">
+          <label class="form-check-label" for="FullStack">
+            Desenvolvedor FullStack
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" value="" id="python">
+          <label class="form-check-label" for="python">
+            Programador Python
+          </label>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Estado</label>
+          <select class="form-select">
+            <option selected>Estado</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="Comentário" class="form-label">Comentário</label>
+          <textarea class="form-control" name="form_comment" id="" rows="3" placeholder="Digite seu comentário"></textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio" id="">
+          <label class="form-check-label" for="">
+            Default radio
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="radio" id="" checked>
+          <label class="form-check-label" for="">
+            Default checked radio
+          </label>
+        </div>
+        <span class="badge rounded text-bg-primary">New!</span>
+        <button type="button" class="btn btn-success toggle">Enviar</button>
+      </form>
     </div>
 </body>
 </html>

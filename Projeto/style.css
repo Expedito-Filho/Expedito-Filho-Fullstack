@@ -30,7 +30,7 @@ body{
     font-family: 'Slackey', cursive;
     display: block;
     position: relative;
-    padding-top: 3vh;
+    padding: 3vh;
     font-size: clamp(.7em, .7em + 1.5vw, 2.7em);
     text-align: center;
 }

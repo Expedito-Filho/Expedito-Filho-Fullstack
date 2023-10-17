@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis JavaScript</title>
+</head>
+<body>
+    <form action="" id="calculo">
+        Número 1: <input type="number" id="n1">
+        Número 2: <input type="number" id="n2">
+        Total: <input type="number" id="total">
+        <input type="submit" id="Calcular">
+    </form>
+    <script>
+        document.getElementById('calculo').onsubmit = function(){
+            var n1=document.getElementById('n1').value;
+            var n2=document.getElementById('n2').value;
+            var total=parseFloat(n1)+parseFloat(n2);
+            document.getElementById('total').value=total;
+            return false;
+        };
+    </script>
+</body>
+</html>

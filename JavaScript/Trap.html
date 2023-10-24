@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Área de Trapézio</title>
+</head>
+<body>
+    <h1>Calculadora de Área de Trapézio</h1>
+    <p>Preencha os valores:</p>
+    <form id="trapezoidForm">
+        Base Maior: <input type="number" id="baseMaior" step="any" required><br>
+        Base Menor: <input type="number" id="baseMenor" step="any" required><br>
+        Altura: <input type="number" id="altura" step="any" required><br>
+        <input type="submit" value="Calcular Área">
+    </form>
+    <p id="resultado"></p>
+
+    <script>
+        document.getElementById("trapezoidForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const baseMaior = parseFloat(document.getElementById("baseMaior").value);
+            const baseMenor = parseFloat(document.getElementById("baseMenor").value);
+            const altura = parseFloat(document.getElementById("altura").value);
+
+            const resultado = calcularAreaTrapezio(baseMaior, baseMenor, altura);
+
+            if (!isNaN(resultado)) {
+                document.getElementById("resultado").textContent = `A área do trapézio é: ${resultado}`;
+            } else {
+                document.getElementById("resultado").textContent = "Preencha valores válidos para calcular a área.";
+            }
+        });
+
+        function calcularAreaTrapezio(baseMaior, baseMenor, altura) {
+            if (baseMaior <= 0 || baseMenor <= 0 || altura <= 0) {
+                return NaN;
+            }
+
+            return ((baseMaior + baseMenor) * altura) / 2;
+        }
+    </script>
+</body>
+</html>

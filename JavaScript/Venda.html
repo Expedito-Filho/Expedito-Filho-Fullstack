@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda com desconto</title>
+</head>
+<body>
+    <h1>Cálculo de valor de uma Venda</h1>
+    <form id="valorVenda">
+        Valor do Produto: <input type="text"  id="produto">
+        <br><br>
+        Modalidade da Venda: <br>
+        Venda à vista: <input type="radio" onclick = "avista('vista')" name="venda" id="vista">
+        <br>
+        Venda a prazo: <input type="radio" onclick = "avista()" name="venda" id="prazo">
+        <br><br>
+
+        Total da Venda: <input type="text" id="vfinal">
+    </form>
+    <script>
+        
+        function avista(venda) {
+            var produto = document.getElementById('produto').value;
+            if(venda == 'vista'){
+                var vfinal = parseFloat(produto) * 0.9;
+                document.getElementById('vfinal').value = vfinal;
+                }
+                else{
+                    vfinal = parseFloat(produto);
+                    document.getElementById('vfinal').value = vfinal;
+                }
+            return false;
+        }
+    </script>
+</body>
+</html>

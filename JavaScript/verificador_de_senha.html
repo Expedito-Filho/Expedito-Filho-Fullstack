@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário
+        <h3>Preencha seus dados abaixo:</h3>
+    <form id="cadastro">
+        Nome: <input type="text" id="nome"><br>
+        Senha: <input type="password" name="" id="password"><br>
+        Repetir senha: <input type="password" name="" id="verify"><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <script>
+        document.getElementById('cadastro').onsubmit = function(){
+        var nome = document.getElementById('nome').value;
+        var password = document.getElementById('password').value;
+        var verify = document.getElementById('verify').value;
+        if (nome == "" || nome == null ) {
+            alert('Nenhum nome digitado')
+        }
+        if(password == "" || password == null){
+            alert('Digite uma senha')
+        }else{
+            if (password == verify) {
+            alert("Bem-vindo " +nome+ "! Cadastro efetuado com sucesso.");
+        }
+        else {
+            alert("As senhas digitadas não correspondem")
+        }
+        }
+    }
+    </script>
+</body>
+</html>

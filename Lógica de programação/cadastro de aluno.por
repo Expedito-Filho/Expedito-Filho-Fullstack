@@ -1,84 +1,50 @@
-//Construir um sistema de informacao, declare as variáveis 
-//para o algoritmo de cadastramento de alunos, cujos dados são:
-//nome, sexo, endereço, cidade, estado, CEP, telefone, data de nascimento, RG, 
-//nome do pai, nome da mãe e grau de escolaridade.
+//Construir um sistema de informacao, declare as variï¿½veis 
+//para o algoritmo de cadastramento de alunos, cujos dados sï¿½o:
+//nome, sexo, endereï¿½o, cidade, estado, CEP, telefone, data de nascimento, RG, 
+//nome do pai, nome da mï¿½e e grau de escolaridade.
 
 programa
 {
 	funcao inicio ()
 	{
-		cadeia nome
-    cadeia sexo
-    cadeia endereco
-    cadeia cidade
-    cadeia estado
-    cadeia telefone
-    cadeia nomeDoPai
-    cadeia nomeDaMae
-    cadeia grauDeEscolaridade
-    inteiro cep
-    inteiro dataNascimento
-    inteiro rg 
-
+		cadeia nome, sexo, endereco, cidade, estado, telefone, nomeDoPai, nomeDaMae,grauDeEscolaridade
+    inteiro cep, dataNascimento, rg 
 		escreva("Digite seu nome: ")
 		leia(nome)
-    
     escreva("Seu sexo: ")
-		leia(sexo)
-    
-    escreva("Endereço: ")
-		leia(endereco)
-    
+		leia(sexo)    
+    escreva("EndereÃ§o: ")
+		leia(endereco)    
     escreva("Cidade: ")
-		leia(cidade)
-    
+		leia(cidade)    
     escreva("Estado: ")
-		leia(estado)
-    
+		leia(estado)    
     escreva("Telefone: ")
-		leia(telefone)
-    
+		leia(telefone)    
     escreva("Nome do pai: ")
-		leia(nomeDoPai)
-    
-    escreva("Nome da mãe: ")
-		leia(nomeDaMae)
-    
+		leia(nomeDoPai)    
+    escreva("Nome da mÃ£e: ")
+		leia(nomeDaMae)    
     escreva("Grau de Escolaridade: ")
 		leia(grauDeEscolaridade)
-
     escreva("Digite o CEP: ")
 		leia(cep)
-
     escreva("Data de Nascimento: ")
 		leia(dataNascimento)
-
     escreva("RG: ")
-		leia(rg)
-		
+		leia(rg)		
 		escreva("O nome digitado foi: ", nome, "\n")
-
     escreva("O sexo digitado foi: ", sexo, "\n")
-
-    escreva("O endereço digitado foi: ", endereco, "\n")
-    
+    escreva("O endereÃ§o digitado foi: ", endereco, "\n")    
     escreva("A cidade digitado foi: ", cidade, "\n")
-
     escreva("O estado digitado foi: ", estado, "\n")
-
-    escreva("O telefone digitado foi: ", telefone, "\n")
-    
+    escreva("O telefone digitado foi: ", telefone, "\n")    
     escreva("O nome do pai digitado foi: ", nomeDoPai, "\n")
-
-    escreva("O nome da mãe digitado foi: ", nomeDaMae, "\n")
-
-    escreva("O grau de escolaridade digitado foi: ", grauDeEscolaridade, "\n")
-    
+    escreva("O nome da mÃ£e digitado foi: ", nomeDaMae, "\n")
+    escreva("O grau de escolaridade digitado foi: ", grauDeEscolaridade, "\n")    
     escreva("O CEP digitado foi: ", cep, "\n")
-
     escreva("A data de nascimento digitada foi: ", dataNascimento, "\n")
-
-    escreva("O número RG digitado foi: ", rg, "\n")
+    escreva("O nÃºmero RG digitado foi: ", rg, "\n")
 	}
 }
 

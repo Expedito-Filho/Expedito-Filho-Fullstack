@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h2>Insira os dados abaixo</h2>
+        </div>
+        <hr>
+        <div>
+            <form id="imc">
+                Digite seu peso: <input type="text" id="peso">
+                <br>
+                Digite sua altura: <input type="text" id="altura">
+                <br>
+                <input type="submit" value="Calcular">
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById("imc").onsubmit = function(){
+            var peso = document.getElementById('peso').value;
+            var altura = document.getElementById('altura').value;
+            var resultado = (peso / (altura ** 2));
+
+            if (peso == "" || peso == null){
+                alert("Digite o peso");
+            }
+            else if (altura == "" || altura == null){
+                alert("Digite a altura");
+            }else{
+            if (resultado < 18.5){
+                alert("IMC = "+resultado.toFixed(2)+" = Baixo Peso!"); let text = document.getElementById("").innerHTML;
+            }
+            if (resultado >= 18.5 && resultado <25){
+                alert("IMC = "+resultado.toFixed(2)+" = Peso Normal");
+            }
+            if (resultado >= 25 && resultado <30){
+                alert("IMC = "+resultado.toFixed(2)+" = Sobrepeso");
+            }
+            if (resultado >= 30 && resultado < 35){
+                alert("IMC = "+resultado.toFixed(2)+" = Obesidade Grau 1");
+            }
+            if (resultado >= 35 && resultado < 40){
+                alert("IMC = "+resultado.toFixed(2)+" = Obesidade Grau 2");
+            }
+            if (resultado >= 40){
+                alert("IMC = "+resultado.toFixed(2)+" = Obesidade Grau 3");
+            }
+        }
+        }            
+        
+    </script>
+</body>
+</html>

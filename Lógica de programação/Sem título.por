@@ -9,6 +9,10 @@ programa {
     leia(n3)
     escreva("Digite a nota 4: ")
     leia(n4)
-    escreva("A média é: ", (n1+n2+n3+n4)/4)
+    escreva("A media e: ", (n1+n2+n3+n4)/4)
   }
+
+
+
+
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <form class="col-6 justify-content-center">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" onblur="V_nome(this)" required>
+            <label for="name">Nome*</label>
+            <p id="l_nome"></p>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="rg" onblur="V_rg(this)" oninput="formatRg(this)" required>
+            <label for="email">RG*</label>
+            <p id="l_rg"></p>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" onblur="V_email(this)" required>
+            <label for="email">Email*</label>
+            <p id="l_email"></p>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" onblur="V_password(this)" required>
+            <label for="password">Senha*</label>
+            <p id="l_password"></p>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password2" onblur="V_password2(this)" required>
+            <label for="password2">Confirmar Senha*</label>
+            <p id="l_password2"></p>
+        </div>
+        <input type="submit" value="Salvar">
+    </form>
+    <script>
+        function V_nome(campo){
+            if (campo.value.trim() == ''){
+                document.getElementById("l_nome").innerHTML = 'Campo obrigatório';
+                campo.style.border = '1px solid red';
+                document.getElementById("l_nome").style.color = 'red'
+            }
+            else{
+                document.getElementById("l_nome").innerHTML = '';
+                campo.style.border = '1px solid green';
+                document.getElementById("l_nome").style.color = 'green'
+            }
+        }
+        function V_rg(campo){
+            if (campo.value.trim() == ''){
+                document.getElementById("l_rg").innerHTML = 'Campo obrigatório';
+                campo.style.border = '1px solid red';
+                document.getElementById("l_rg").style.color ='red'
+            }
+            else{
+                document.getElementById("l_rg").innerHTML = '';
+                campo.style.border = '1px solid green';
+                document.getElementById("l_rg").style.color = 'green'
+            }
+        }
+        function V_email(campo){
+            if (campo.value.trim() == ''){
+                document.getElementById("l_email").innerHTML = 'Campo obrigatório';
+                campo.style.border = '1px solid red';
+                document.getElementById("l_email").style.color ='red'
+            }
+            else{
+                document.getElementById("l_email").innerHTML = '';
+                campo.style.border = '1px solid green';
+                document.getElementById("l_email").style.color = 'green'
+            }
+        }
+        function V_password(campo){
+            if (campo.value.trim() == ''){
+                document.getElementById("l_password").innerHTML = 'Campo obrigatório';
+                campo.style.border = '1px solid red';
+                document.getElementById("l_password").style.color ='red'
+            }
+            else{
+                document.getElementById("l_password").innerHTML = '';
+                campo.style.border = '1px solid green';
+                document.getElementById("l_password").style.color = 'green'
+            }
+        }
+        function V_password2(campo){
+            if (campo.value.trim() == ''){
+                document.getElementById("l_password2").innerHTML = 'Campo obrigatório';
+                campo.style.border = '1px solid red';
+                document.getElementById("l_password2").style.color ='red'
+            }
+            else{
+                document.getElementById("l_password2").innerHTML = '';
+                campo.style.border = '1px solid green';
+                document.getElementById("l_password2").style.color = 'green'
+            }
+        }
+    </script>
+</body>
+</html>

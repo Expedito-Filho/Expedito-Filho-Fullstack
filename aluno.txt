@@ -1,0 +1,66 @@
+Aluno 001:
+nome: José
+grau_de_escolaridade: Medio
+idade: 15
+sexo: M
+pai: Paulo
+mae: Maria
+endereco: Rua Acola
+cep: 62020202
+rg: 2001022155131
+telefone: 88955641353
+Aluno 002:
+nome: Marcos
+grau_de_escolaridade: Medio
+idade: 16
+sexo: M
+pai: Fernando
+mae: Carolina
+endereco: Rua Juca
+cep: 62051034
+rg: 20034498954
+telefone: 889663118945
+Aluno 003:
+nome: Pedro
+grau_de_escolaridade: Medio
+idade: 17
+sexo: M
+pai: Paulo
+mae: Maria
+endereco: Rua rua
+cep: 62030030
+rg: 2003002114554
+telefone: 889956516545
+Aluno 004:
+nome: Joao
+grau_de_escolaridade: Fundamental
+idade: 12
+sexo: M
+pai: Carlos
+mae: Marlene
+endereco: Rua Josafa
+cep: 62051446
+rg: 2005631024558
+telefone: 889666331158
+Aluno 005:
+Nome: Manoel
+Grau_de_escolaridade: Medio
+Idade: 16
+Sexo: M
+Pai: Carlos
+Mae: Carla
+Endereco: Rua Bem Longe
+CEP: 62051032
+RG: 2003021031546
+Telefone: 88997764526
+Aluno 006:
+nome: Fernando
+grau_de_escolaridade: Fundamental
+idade: 10
+sexo: M
+pai: Paulo
+mae: Fernanda
+endereco: Rua Escondida
+cep: 62054866
+rg: 2013158451889
+telefone: 898999444451

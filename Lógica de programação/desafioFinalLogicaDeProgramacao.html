@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        input[type="text"], input[type="text"], button {
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <h1>Calculadora de Salário</h1>
+        <label for="salarioBruto">Salário Bruto:</label>
+        <input type="text" id="salarioBruto" placeholder="Informe o salário">
+        <br>
+        <label for="beneficios">Adicional de Benefícios:</label>
+        <input type="text" id="beneficios" placeholder="Informe os benefícios">
+        <br>
+        <button onclick="calcularSalario()">Calcular Salário</button>
+        <br>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function calcularSalario() {
+            const salarioBruto = parseFloat(document.getElementById("salarioBruto").value);
+            const adicionalBeneficios = parseFloat(document.getElementById("beneficios").value);
+
+            let percentualImposto;
+            let salarioLiquido;
+
+            if (salarioBruto <= 1100) {
+                percentualImposto = 0.05;
+            } else if (salarioBruto <= 2500) {
+                percentualImposto = 0.10;
+            } else {
+                percentualImposto = 0.15;
+            }
+
+            const imposto = salarioBruto * percentualImposto;
+            salarioLiquido = salarioBruto - imposto + adicionalBeneficios;
+
+            const resultado = ('Salário a ser transferido: R$' + salarioLiquido.toFixed(2));
+
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

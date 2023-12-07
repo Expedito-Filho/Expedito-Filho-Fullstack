@@ -17,3 +17,45 @@ PESQUISAR ELEMENTO DA TABELA PELA LETRA INICIAL
 //SELECT todas as colunas FROM `nome da tabela` WHERE nome da coluna LIKE "valor procurado%"
 SELECT * FROM `produtos` WHERE produtos LIKE "a%"
 
+CRIAR UM BANCO DE DADOS
+CREATE DATABASE nome_do_banco_de_dados
+
+CRIAR UMA TABELA A PARTIR DE UM BANCO DE DADOS
+//USE nome_do_banco_de_dados
+USE banco de dados
+CREATE TABLE nome da tabela(
+	nome_da_coluna tipo_de_dado,
+	...);
+	id_func int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nome varchar(255) NOT NULL,
+	sobrenome varchar(255),
+	idade int);
+
+ALTERAR UMA TABELA
+
+ADICIONAR UMA COLUNA
+//ALTER TABLE banco_de_dados.nome_da_tabela
+//ADD nome_da_coluna tipo_de_dado atributo,
+ALTER TABLE empresa.funcionarios
+ADD email varchar(100) not null,
+ADD profissao varchar(100);
+
+REMOVER UMA COLUNA
+//ALTER TABLE banco_de_dados.nome_da_tabela
+//DROP COLUMN nome_da_coluna;
+ALTER TABLE empresa.funcionarios
+DROP COLUMN email;
+
+ALTERAR O NOME DA COLUNA
+//ALTER TABLE banco_de_dados.nome_da_tabela
+//CHANGE nome_antigo nome_novo tipo_de_dado;
+ALTER TABLE empresa.funcionarios
+CHANGE id_func id INT;
+
+EXCLUIR UMA TABELA
+//DROP TABLE banco_de_dados.nome_da_tabela
+DROP TABLE empresa.funcionarios;
+
+EXCLUIR UM BANCO DE DADOS
+//DROP DATABASE nome_do_banco_de_dados
+DROP DATABASE empresa;
